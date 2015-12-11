@@ -1,0 +1,7 @@
+"use strict";
+let fs = require("fs");
+var load_hqmf_utils = function(){
+  eval.call(global,fs.readFileSync(`${__dirname}/hqmf_utils.js`,"utf-8"));
+  eval.call(global,fs.readFileSync(`${__dirname}/map_reduce_utils.js`,"utf-8"));
+}
+load_hqmf_utils();

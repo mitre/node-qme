@@ -1,0 +1,7 @@
+var generator = function(options){
+  var hqmfjs = {};
+  <%= logic %>
+  return hqmfjs;
+}
+
+module.exports.<%= name %> = generator; 

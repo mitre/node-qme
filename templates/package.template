@@ -1,0 +1,11 @@
+{
+  "name": "<%= name %>",
+  "version": "<%= version %>",
+  "description": "Clinical Quality Measures",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "author": "CQM Generator",
+  "license": "Apache-2.0"
+}
