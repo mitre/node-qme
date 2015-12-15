@@ -1,7 +1,7 @@
 {
-  "name": "<%= name %>",
+  "name": "cqm-mu-measures",
   "version": "<%= version %>",
-  "description": "Clinical Quality Measures",
+  "description": "<%= name %>",
   "main": "index.js",
   "directories": {
     "lib": "lib"

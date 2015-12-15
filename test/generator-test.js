@@ -6,7 +6,7 @@ let bundle = null;
 let bundle_path = "test/fixtures/bundle.zip"
 let Generator = require('../lib/generator.js').Generator;
 let output_directory = "./tmp/generator"
-
+global.print = function(data){console.log(data)}
 
 var child = require('child_process');
 
@@ -47,6 +47,26 @@ describe('Generator', () => {
 
       assert(fs.existsSync(`tmp/generator/lib/${measure_id}.js`), `${measure_id}.js should have been generated `);
     });
+    done();
+
+  });
+
+ it('contains executable measures ', (done) => {
+   
+    var g = new Generator(bundle);
+    g.generate_package(output_directory);
+    var cqms = require("../"+output_directory+"/index.js")
+    var patient = new hQuery.Patient({});
+
+    bundle.measure_ids().forEach(measure_id => { 
+      var g = cqms[measure_id]({effective_date: 0 , enable_logging: false, enable_rationale: false, short_circuit: false});
+      var result = g.calculate(patient, 0, null);
+      assert(result, "calcualte method should return a result") 
+      assert(result.hasOwnProperty("IPP"), "result should have an IPP");
+      assert(result.hasOwnProperty("effective_date") , "result should have effective_date");
+     })
+
+    
     done();
 
   });
