@@ -1,7 +1,7 @@
 "use strict";
 
 let assert = require('assert');
-let Bundle = require('../lib/bundle.js').Bundle;
+let Bundle = require('../lib/bundle.js')
 let bundle_path = "test/fixtures/bundle.zip"
 
 describe('Bundle', () => {

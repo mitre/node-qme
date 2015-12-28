@@ -1,0 +1,6 @@
+module.exports.Generator = require('./lib/generator')
+module.exports.Bundle = require('./lib/bundle')
+module.exports.Loader = require('./lib/loader')
+module.exports.Executor = require('./lib/executor')
+module.exports.CVHandler = require('./lib/cv-handler')
+module.exports.ProportionHandler = require('./lib/proportion-handler')

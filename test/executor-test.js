@@ -1,11 +1,11 @@
 "use strict";
 let fs = require("fs")
 let assert = require('assert');
-let Bundle = require('../lib/bundle.js').Bundle;
+let Bundle = require('../lib/bundle.js')
 let bundle = null;
 let bundle_path = "test/fixtures/bundle.zip"
-let Loader = require('../lib/loader.js').Loader;
-let Executor = require('../lib/executor.js').Executor;
+let Loader = require('../lib/loader.js')
+let Executor = require('../lib/executor.js')
 
 global.print = function(data){};
 
