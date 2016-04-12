@@ -63,7 +63,6 @@ describe('Executor', () => {
 
   it('can execute measures on a patient source ', (done) => {
 
-    bundle.loadUtils();
     var executor = new Executor(bundle);
 
     var psource = new PatientSource([new hQuery.Patient({})]);
