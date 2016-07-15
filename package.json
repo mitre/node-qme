@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mkdir -p tmp; mocha"
   },
   "author": "Rob Dingwell",
   "license": "Apache-2.0",
