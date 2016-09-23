@@ -4,7 +4,6 @@ let assert = require('assert');
 let Bundle = require('../lib/bundle.js')
 let bundle = null;
 let bundle_path = "test/fixtures/bundle.zip"
-let Loader = require('../lib/loader.js')
 let Executor = require('../lib/executor.js')
 
 global.print = function(data){};
@@ -63,11 +62,9 @@ describe('Executor', () => {
   });
 
   it('can execute measures on a patient source ', (done) => {
-   
-    var loader = new Loader(bundle);
-    var cqms = loader.load();
-    var executor = new Executor(cqms);
-    
+
+    var executor = new Executor(bundle);
+
     var psource = new PatientSource([new hQuery.Patient({})]);
     var handler = new Handler();
     var options = {effective_date: 0 , enable_logging: false, enable_rationale: false, short_circuit: false};
