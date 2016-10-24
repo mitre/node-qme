@@ -1,6 +1,6 @@
 {
   "name": "node-qme",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Quaility measure calculation engine",
   "main": "index.js",
   "directories": {
@@ -12,7 +12,8 @@
   },
   "author": {"name": "Rob Dingwell", "email": "rob@mitre.org"},
   "contributors": [
-    {"name": "Andy Gregorowicz", "email": "andy@mitre.org"}
+    {"name": "Andy Gregorowicz", "email": "andy@mitre.org"},
+    {"name": "Jason Walonoski", "email": "jwalonoski@mitre.org"}
   ],
   "license": "APSL-2.0",
   "devDependencies": {
