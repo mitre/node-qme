@@ -6,26 +6,29 @@
   "directories": {
     "test": "test"
   },
-  "repository": {"type": "git", "url": "https://github.com/mitre/node-qme.git"},
+  "repository": {
+    "url": "https://github.com/mitre/node-qme.git",
+    "type": "git"
+  },
   "scripts": {
     "test": "mkdir -p tmp; mocha"
   },
-  "author": {"name": "Rob Dingwell", "email": "rob@mitre.org"},
+  "author": "Rob Dingwell <rob@mitre.org",
   "contributors": [
-    {"name": "Andy Gregorowicz", "email": "andy@mitre.org"},
-    {"name": "Jason Walonoski", "email": "jwalonoski@mitre.org"}
+    "Andy Gregorowicz <andy@mitre.org>",
+    "Jason Walonoski <jwalonoski@mitre.org>"
   ],
   "license": "APSL-2.0",
   "devDependencies": {
+    "async": ">=1.5.0",
     "chai": "^3.4.1",
-    "mocha": "^2.3.4",
-    "async": ">=1.5.0"
+    "mocha": "^2.3.4"
   },
   "dependencies": {
     "adm-zip": "^0.4.7",
-    "underscore": "^1.8.3",
+    "fibers": ">=1.0.4",
     "mongodb": ">=2.0.49",
-    "mongodb-promise" : "",
-    "fibers": ">=1.0.4"
+    "mongodb-promise": "",
+    "underscore": "^1.8.3"
   }
 }
