@@ -21,6 +21,16 @@ It is expected that the PatientSource passed to the Executor will be initialized
 and ready to read from whatever underlying data source it uses (database, flat
 file, etc).
 
+## Setup
+```
+yarn install
+```
+
+## Test
+```
+yarn test
+```
+
 # License
 Copyright 2016 The MITRE Corporation
 
